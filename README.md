@@ -1,14 +1,14 @@
-troll-hard
+Troll Hard
 ==========
 
 live fast, troll hard in html!!
 
 
-# Installation
+## Installation
 
   load troll-hard.css in your html file
 
-# Usage
+## Usage
 
   ``` <i class="icon-fuckyeah"></i>```
 
