@@ -1,0 +1,19 @@
+@import compass/reset
+@import "sprite/*.png"
+$sprite: sprite-map("sprite/*.png")
+
+[class^="icon-"],[class*="icon-"]
+  background-image: inline-image('sprite-sf06922daef.png')
+  //background-image: $sprite   normally, use this
+
+@mixin icon_base($icon_name)
+  display: inline-block
+  width: image-width("sprite/" + $icon_name + ".png")
+  height: image-height("sprite/" + $icon_name + ".png")
+  background-position: sprite-position($sprite, $icon_name)
+
+$icon_list : fuckyeah ilied jackie nothingtodohere okay rageguy pokerface wtf yey wat yuno troll sadtroll lol fap
+
+@each $list in $icon_list
+  .icon-#{$list}
+    @include icon_base($list)
